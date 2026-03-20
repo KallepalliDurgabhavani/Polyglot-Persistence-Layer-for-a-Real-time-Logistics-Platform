@@ -1,0 +1,9 @@
+﻿{"timestamp": "2023-10-27T10:00:00Z", "type": "PACKAGE_STATUS_CHANGE", "payload": {"package_id": "pkg-test-456", "status": "PICKED_UP", "location": {"lat": 34.0522, "lon": -118.2437}}}
+{"timestamp": "2023-10-27T10:05:00Z", "type": "DRIVER_LOCATION_UPDATE", "payload": {"driver_id": "drv-test-123", "location": {"lat": 34.0530, "lon": -118.2445}, "zone_id": "zone-test-abc"}}
+{"timestamp": "2023-10-27T10:10:00Z", "type": "BILLING_EVENT", "payload": {"invoice_id": "inv-001", "package_id": "pkg-out-of-order-123", "customer_id": "cust-456", "amount": 15.99}}
+INVALID MALFORMED JSON LINE
+{"timestamp": "2023-10-27T10:15:00Z", "type": "PACKAGE_STATUS_CHANGE", "payload": {"package_id": "pkg-test-456", "status": "IN_TRANSIT"}}
+{"timestamp": "2023-10-27T10:20:00Z", "type": "PACKAGE_STATUS_CHANGE", "payload": {"package_id": "pkg-out-of-order-123", "status": "DELIVERED", "driver_id": "drv-test-123"}}
+{"timestamp": "2023-10-27T10:25:00Z", "type": "BILLING_EVENT", "payload": {"invoice_id": "inv-002", "package_id": "pkg-test-456", "customer_id": "cust-789", "amount": 25.50}}
+{"timestamp": "2023-10-27T10:30:00Z", "type": "DRIVER_LOCATION_UPDATE", "payload": {"driver_id": "drv-test-123", "location": {"lat": 34.0540, "lon": -118.2450}, "zone_id": "zone-test-abc"}}
+{"timestamp": "2023-10-27T10:35:00Z", "type": "BILLING_EVENT", "payload": {"invoice_id": "inv-001", "package_id": "pkg-out-of-order-123", "customer_id": "cust-456", "amount": 15.99}}  # Duplicate for req 6
